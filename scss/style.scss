@@ -99,13 +99,26 @@ h6 {
     }
 }
 
+// ОБЯЗАТЕЛЬНО НУЖНО УКАЗЫВАТЬ РАЗМЕР КОНТЕЙНЕРА БЕЗ ЭТОГО БУДЕТ БЕЛИБЕРДА
 .swiper-container {
     width: 1200px;
     height: 700px;
 }
 
+// По умолчанию стоят иконочные шрифты, можно менять цвет и размер шрифта
 .swiper-button-prev,
 .swiper-button-next {
     color: white;
     font-size: 50px;
+}
+
+.swiper-pagination {
+}
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background-color: rgb(0, 0, 0);
+}
+.swiper-scrollbar {
 }
