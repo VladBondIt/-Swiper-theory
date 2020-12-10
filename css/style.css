@@ -106,12 +106,11 @@ h6 {
 .image-slider__img {
   text-align: center;
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
 
 .swiper-container {
-  width: 1200px;
-  height: auto;
+  max-width: 1200px;
 }
 
 .swiper-button-prev,
@@ -136,7 +135,6 @@ h6 {
 }
 
 .swiper-scrollbar {
-  height: 10px !important;
   background-color: #17804b;
 }
 

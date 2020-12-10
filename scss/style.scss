@@ -95,14 +95,13 @@ h6 {
     &__img {
         text-align: center;
         width: 100%;
-        height: 600px;
+        height: 400px;
     }
 }
 
 // ОБЯЗАТЕЛЬНО НУЖНО УКАЗЫВАТЬ РАЗМЕР КОНТЕЙНЕРА БЕЗ ЭТОГО БУДЕТ БЕЛИБЕРДА
 .swiper-container {
-    width: 1200px;
-    height: auto;
+    max-width: 1200px;
 }
 
 // По умолчанию стоят иконочные шрифты, можно менять цвет и размер шрифта
@@ -125,7 +124,6 @@ h6 {
     font-size: 20px;
 }
 .swiper-scrollbar {
-    height: 10px !important;
     background-color: rgb(23, 128, 75);
 }
 .swiper-scrollbar-drag {
