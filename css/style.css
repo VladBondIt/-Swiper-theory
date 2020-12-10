@@ -120,6 +120,10 @@ h6 {
   font-size: 50px;
 }
 
+.swiper-pagination {
+  margin-bottom: 10px;
+}
+
 .swiper-pagination-bullet {
   width: 20px;
   height: 20px;
@@ -129,4 +133,15 @@ h6 {
 
 .swiper-pagination-fraction {
   font-size: 20px;
+}
+
+.swiper-scrollbar {
+  height: 10px !important;
+  background-color: #17804b;
+}
+
+.swiper-scrollbar-drag {
+  cursor: pointer;
+  height: 10px;
+  background-color: #f6faf7;
 }

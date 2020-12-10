@@ -1,4 +1,4 @@
-new Swiper('.image-slider', {
+const mySwiper = new Swiper('.image-slider', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -11,12 +11,17 @@ new Swiper('.image-slider', {
         // renderBullet: function (index, className) {
         //     return '<span class="' + className + '">' + (index + 1) + '</span>';
         // },
-        // type: 'fraction',
-        // renderFraction: function (currentClass, totalClass) {
-        //     return 'Изображение <span class="' + currentClass + '"></span>' +
-        //         ' из ' +
-        //         '<span class="' + totalClass + '"></span>';
-        // },
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+            return 'Изображение <span class="' + currentClass + '"></span>' +
+                ' из ' +
+                '<span class="' + totalClass + '"></span>';
+        },
     },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+        dragClass: 'swiper-scrollbar-drag'
+    }
 
 });
