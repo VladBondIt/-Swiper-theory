@@ -75,6 +75,8 @@ h6 {
 }
 /*--------------------*/
 
+@import "swiper.scss";
+
 .wrapper {
     padding: 30px;
     min-height: 100%;
@@ -96,8 +98,7 @@ h6 {
     &__img {
         text-align: center;
         & img {
-            width: 80%;
-            height: 500px;
+            width: 100%;
         }
     }
 }
