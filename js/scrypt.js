@@ -22,6 +22,15 @@ const mySwiper = new Swiper('.image-slider', {
         el: '.swiper-scrollbar',
         draggable: true,
         dragClass: 'swiper-scrollbar-drag'
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true
+    },
+    mousewheel: {
+        sensitivity: 1,
+        eventsTarget: '.image-slider'
     }
 
 });
