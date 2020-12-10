@@ -75,11 +75,8 @@ h6 {
 }
 /*--------------------*/
 
-@import "swiper.scss";
-
 .wrapper {
     padding: 30px;
-    min-height: 100%;
 }
 .title {
     font-size: 30px;
@@ -97,18 +94,18 @@ h6 {
 
     &__img {
         text-align: center;
-        & img {
-            width: 100%;
-        }
+        max-width: 100%;
+        object-fit: cover;
     }
 }
+
 .swiper-container {
+    width: 1200px;
+    height: 700px;
 }
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-button-prev {
-}
+
+.swiper-button-prev,
 .swiper-button-next {
+    color: white;
+    font-size: 50px;
 }
