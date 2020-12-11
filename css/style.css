@@ -91,6 +91,7 @@ h6 {
 /*--------------------*/
 .wrapper {
   padding: 30px;
+  background-color: #817e7e;
 }
 
 .title {
@@ -100,17 +101,14 @@ h6 {
 }
 
 .image-slider {
-  padding: 50px 0;
+  max-width: 1200px;
+  margin-bottom: 30px;
 }
 
 .image-slider__img {
   text-align: center;
   width: 100%;
-  height: 400px;
-}
-
-.swiper-container {
-  max-width: 1200px;
+  height: 500px;
 }
 
 .swiper-button-prev,
@@ -141,4 +139,59 @@ h6 {
 .swiper-scrollbar-drag {
   cursor: pointer;
   background-color: #b46b49;
+}
+
+.image-mini-slider {
+  width: 1200px;
+  height: 100px;
+}
+
+.image-mini-slider__slide {
+  opacity: 0.2;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.image-mini-slider__slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.image-mini-slider__img {
+  width: 100%;
+  height: 100px;
+  cursor: pointer;
+}
+
+.image-in-slider {
+  height: 450px;
+}
+
+.image-in-slider__slide {
+  height: 450px;
+}
+
+.image-in-slider__img {
+  width: 100%;
+}
+
+.text {
+  font-size: 25px;
+  line-height: 150%;
+  color: white;
+  margin: 50px 0;
+  background-color: #354383;
+  padding: 10px;
+}
+
+.text-slider__wrapper {
+  font-size: 25px;
+  line-height: 150%;
+  color: white;
+}
+
+.text-slider__slide {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }

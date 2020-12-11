@@ -12,27 +12,59 @@
 <body>
     <div class="wrapper">
         <div class="title">Swiper slider</div>
+        <!-- Обычные копии сладера работают нормально и не зависимо друг от друга - просто копипастим html код -->
         <!-- dir="rtl" справа налево -->
         <div class="image-slider swiper-container">
             <div class="image-slider__wrapper swiper-wrapper">
                 <div class="image-slider__slide swiper-slide">
+                    <!-- <div class="swiper-zoom-container"> -->
                     <!-- Рекомендуется добавлять 1 на 1 пиксель картинку -->
                     <img data-src="img/swiper.jpg" class="image-slider__img swiper-lazy" src="img/plug.bmp"
                         alt="Картинка">
                     <div class="swiper-lazy-preloader"></div>
+                    <!-- </div> -->
                 </div>
+                <!-- <div class="image-slider__slide swiper-slide"> -->
+                <!-- Слайдер в слайдере -->
+                <!-- <div class="image-in-slider swiper-container">
+                        <div class="image-in-slider__wrapper swiper-wrapper">
+                            <div class="image-in-slider__slide swiper-slide">
+                                <img class="image-in-slider__img" src="img/swiper4.jpg" alt="Картинка">
+                            </div>
+                            <div class="image-in-slider__slide swiper-slide">
+                                <img class="image-in-slider__img" src="img/swiper3.jpg" alt="Картинка">
+                            </div>
+                            <div class="image-in-slider__slide swiper-slide">
+                                <img class="image-in-slider__img" src="img/swiper2.jpg" alt="Картинка">
+                            </div>
+                            <div class="image-in-slider__slide swiper-slide">
+                                <img class="image-in-slider__img" src="img/swiper7.jpg" alt="Картинка">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div> -->
+                <!-- </div> -->
                 <div class="image-slider__slide swiper-slide">
+                    <!-- <div class="swiper-zoom-container"> -->
                     <img data-src="img/swiper2.jpg" class="image-slider__img swiper-lazy" src="img/plug.bmp"
                         alt="Картинка">
                     <div class="swiper-lazy-preloader"></div>
+                    <!-- </div> -->
                 </div>
                 <div class="image-slider__slide swiper-slide">
+                    <!-- <div class="swiper-zoom-container"> -->
                     <img data-src="img/swiper3.jpg" class="image-slider__img swiper-lazy" src="img/plug.bmp"
+                        alt="Картинка">
+                    <div class="swiper-lazy-preloader"></div>
+                    <!-- </div> -->
+                </div>
+                <div class="image-slider__slide swiper-slide">
+                    <img data-src="img/swiper4.jpg" class="image-slider__img swiper-lazy" src="img/plug.bmp"
                         alt="Картинка">
                     <div class="swiper-lazy-preloader"></div>
                 </div>
                 <div class="image-slider__slide swiper-slide">
-                    <img data-src="img/swiper4.jpg" class="image-slider__img swiper-lazy" src="img/plug.bmp"
+                    <img data-src="img/swiper5.jpg" class="image-slider__img swiper-lazy" src="img/plug.bmp"
                         alt="Картинка">
                     <div class="swiper-lazy-preloader"></div>
                 </div>
@@ -55,11 +87,78 @@
 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
+            <!-- 
             <div class="swiper-pagination"></div>
 
-            <div class="swiper-scrollbar"></div>
+            <div class="swiper-scrollbar"></div> -->
         </div>
+        <div class="text">Разделяющий объект</div>
+        <div class="text-slider swiper-container">
+            <div class="text-slider__wrapper swiper-wrapper">
+                <div class="text-slider__slide swiper-slide">
+                    <h2>Слайд №1</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi.
+                </div>
+                <div class="text-slider__slide swiper-slide">
+                    <h2>Слайд №2</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi.
+                </div>
+                <div class="text-slider__slide swiper-slide">
+                    <h2>Слайд №3</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi.
+                </div>
+                <div class="text-slider__slide swiper-slide">
+                    <h2>Слайд №4</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi.
+                </div>
+                <div class="text-slider__slide swiper-slide">
+                    <h2>Слайд №5</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi.
+                </div>
+                <div class="text-slider__slide swiper-slide">
+                    <h2>Слайд №6</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi.
+                </div>
+                <div class="text-slider__slide swiper-slide">
+                    <h2>Слайд №7</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi.
+                </div>
+                <div class="text-slider__slide swiper-slide">
+                    <h2>Слайд №8</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, commodi.
+                </div>
+            </div>
+        </div>
+
+        <!-- Миниатюры -->
+        <!-- <div class="image-mini-slider swiper-container">
+            <div class="image-mini-slider__wrapper swiper-wrapper">
+                <div class="image-mini-slider__slide swiper-slide">
+                    <img class="image-mini-slider__img" src="img/swiper.jpg" alt="Картинка">
+                </div>
+                <div class="image-mini-slider__slide swiper-slide">
+                    <img class="image-mini-slider__img" src="img/swiper2.jpg" alt="Картинка">
+                </div>
+                <div class="image-mini-slider__slide swiper-slide">
+                    <img class="image-mini-slider__img" src="img/swiper3.jpg" alt="Картинка">
+                </div>
+                <div class="image-mini-slider__slide swiper-slide">
+                    <img class="image-mini-slider__img" src="img/swiper4.jpg" alt="Картинка">
+                </div>
+                <div class="image-mini-slider__slide swiper-slide">
+                    <img class="image-mini-slider__img" src="img/swiper5.jpg" alt="Картинка">
+                </div>
+                <div class="image-mini-slider__slide swiper-slide">
+                    <img class="image-mini-slider__img" src="img/swiper6.jpg" alt="Картинка">
+                </div>
+                <div class="image-mini-slider__slide swiper-slide">
+                    <img class="image-mini-slider__img" src="img/swiper7.jpg" alt="Картинка">
+                </div>
+                <div class="image-mini-slider__slide swiper-slide">
+                    <img class="image-mini-slider__img" src="img/swiper8.jpg" alt="Картинка">
+                </div>
+            </div>
+        </div> -->
     </div>
 
 
