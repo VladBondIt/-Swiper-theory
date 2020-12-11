@@ -111,7 +111,9 @@ const mySwiper = new Swiper('.image-slider', {
 
     preloadImages: false,
     lazy: {
+        // Подгружать следующую картинку за показаной
         loadPrevNext: false,
+        // Подгружать на старте анимации трансформа
         loadOnTransitionStart: false,
     },
     // Слежка за видимыми сладйами
