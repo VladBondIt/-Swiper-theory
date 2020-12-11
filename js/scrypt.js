@@ -143,6 +143,35 @@ const mySwiper = new Swiper('.image-slider', {
     //         spaceBetween: 7,
     //     },
     // }
+
+    // Настройка для решения проблем с табами
+    observer: true,
+
+    // Обновить свайпер при изменение родителя
+    observeParents: true,
+
+    observeSlideChildren: true,
+
+    // Если слайды приходят с сервера
+    // virtual: {
+    //     slides: (function () {
+    //         let slide = [];
+    //         for (let i = 0; i < 500; i++) {
+    //             slide.push(`<div class="image-slider__text">Сдайдер№${i}</div>`)
+    //         }
+    //         return slide;
+    //     }()),
+    // }
+
+    // доступность 
+    // a11y: {
+    //     enabled: true,
+    //     prevSlideMessage: 'Previous slide',
+    //     nextSlideMessage: 'Next slide',
+    //     firstSlideMessage: 'This is the first slide',
+    //     lastSlideMessage: 'This is the last slide',
+    // }
+
 });
 
 // Инициализируем новый слайдер в слайдере
@@ -163,3 +192,12 @@ const textSwiper = new Swiper('.text-slider', {
     spaceBetween: 30,
 });
 
+mySwiper.controller.control = textSwiper;
+textSwiper.controller.control = mySwiper;
+
+
+const sliderBlock = document.querySelector('.image-slider');
+
+sliderBlock.addEventListener('mouseenter', () => {
+    mySwiper.autoplay.stop();
+})
